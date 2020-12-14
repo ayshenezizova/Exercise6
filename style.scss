@@ -1,0 +1,191 @@
+@import "variables";
+@import "mixin";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+    font-family: "Heebo", sans-serif;
+}
+
+body {
+    margin: 15px 15px 15px 15px;
+    background-color: black;
+    min-height: 62rem;
+   @include mobile{
+       margin:0;
+   }
+
+    .box {
+        background-color:#f8f9fa;
+        min-height: 61rem;
+        font-family: "Heebo", sans-serif;
+     
+
+        .row {
+            min-height: 6.5rem;
+            align-items: center;
+           
+
+            .left {
+                display: flex;
+                padding: 14px 0px 0px 53px;
+
+                logo {
+                    margin: 12px 23px 7px 0px;
+                    @include mobile{
+                        margin: 23px 19px 7px 7px;
+                    }
+                   
+                }
+
+                ul {
+                    @include mobile {
+                        display: none;
+                    }
+                    display: flex;
+
+                    li {
+                        margin: 25px 36px 0px 19px;
+                    }
+                }
+            }
+
+            .right {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin-left: 26rem;
+                margin-top: 19px;
+                @include mobile {
+                    display: none;
+                }
+
+                p {
+                    margin-bottom: 0rem;
+                }
+
+                .icon {
+                    width: 25px;
+                    margin: 9px;
+                }
+            }
+        }
+
+        main {
+            .boxes {
+                min-height: 50rem;
+                justify-content: space-between;
+                .left-box {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    min-height: 50rem;
+                    @include mobile{
+                        min-height: 23rem;
+                    }
+
+                    .text1 {
+                        display: flex;
+                        margin: 58px 0px 0px 81px;
+
+                        .filter {
+                            width: 65px;
+                            margin: -9px 21px 0px 2px;
+                            @include mobile{
+                                width: 55px;
+                                margin: -13px 22px 0px -8px;
+                            }
+                        }
+                        p {
+                            border: 1px solid black;
+                            border-radius: 26px;
+                            padding: 9px 28px 1px 28px;
+                            @include mobile{
+                                padding: 2px 28px 1px 28px;
+                            }
+                        }
+                    }
+                    .text2 {
+                        padding: 0px 0px 52px 23px;
+                        @include mobile{
+                            padding: 0px 38px 0px 23px;
+                        }
+                        .ul {
+                            display: flex;
+                            padding: 1px 5px 19px 28px;
+                        }
+                        h6 {
+                            font-size: 1.1rem;
+                            margin-left: 57px;
+                        }
+                    }
+                }
+.center{
+img{
+    max-height: 50rem;
+    @include mobile{
+        max-height: 31rem;
+    }
+}
+}
+                .right-box {
+                
+                    .card {
+                        min-height: 45rem;
+                        margin: 52px 0px 0px 53px;
+                        padding: 3rem 2rem 2rem 2rem;
+                        width: 25rem;
+                        @include mobile {
+                            margin: 4px 13px 8px 0px;
+                            width: 21.7rem;
+                        }
+                        .card-body {
+                            flex: 1 1 auto;
+                            padding: 1rem 1rem;
+                        }
+                        .card-title {
+                            margin-bottom: 0.5rem;
+                            padding: 0px 0px 15px 0px;
+                        }
+                        h4 {
+                            border: 2px solid black;
+                            padding: 9px;
+                            background-color: #dee2e6;
+                            text-align: center;
+                        }
+                        ul{
+                            display: flex;
+                            justify-content: space-between;
+                            margin-bottom: 0rem;
+                        }
+                        .card-text {
+                            padding-bottom: 8rem;
+                            @include mobile{
+                                margin-top: 37px;
+                                margin-bottom: 0rem;
+                                padding-bottom: 3rem;
+                            }
+                        }
+                        h5 {
+                            color: red;
+                        }
+                        h6 {
+                            font-size: 1rem;
+                            padding-top: 7px;
+                        }
+                        p {
+                            padding-bottom: 7px;
+                            margin-top: 0;
+                            padding-top: 38px;
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
